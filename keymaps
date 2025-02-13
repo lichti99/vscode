@@ -1,0 +1,125 @@
+// Place your key bindings in this file to override the defaults
+ [
+  {
+    "key": "ctrl+alt+space - -",
+    "command": "projectManager.listProjects",
+    "when": "isWindows"
+},
+{
+  "key": "ctrl+cmd+space - -",
+  "command": "projectManager.listProjects",
+  "when": "isMac"
+},
+  {
+    "key": "ctrl+alt+space - w",
+    "command": "projectManager.listProjectsNewWindow",
+    "when": "isWindows"
+},
+{
+  "key": "ctrl+cmd+space - w",
+  "command": "projectManager.listProjectsNewWindow",
+  "when": "isMac"
+},
+  {
+    "key": "ctrl+alt+space o p",
+    "command": "workbench.profiles.actions.switchProfile",
+    "when": "isWindows"
+},
+{
+  "key": "ctrl+cmd+space o p",
+  "command": "workbench.profiles.actions.switchProfile",
+  "when": "isMac"
+},
+
+  {
+    "key": "ctrl+alt+space e",
+    "command": "workbench.view.explorer",
+    "when": "isWindows"
+},
+  {
+    "key": "ctrl+alt+space p",
+    "command": "workbench.action.showCommands",
+    "when": "usWindows"
+},
+  {
+    "key": "ctrl+alt+space f",
+    "command": "workbench.action.quickOpen",
+    "when": "isWindows"
+},  
+  {
+    "key": "ctrl+alt+space q",
+    "command": "workbench.action.closeActiveEditor",
+    "when": "isWindows && editorTextFocus"
+},
+{
+  "key": "ctrl+alt+space q",
+  "command": "workbench.action.terminal.kill",
+  "when": "isWindows && terminalFocus"
+},
+  {
+    "key": "ctrl+alt+space c f",
+    "command": "workbench.action.closeFolder",
+    "when": "isWindows"
+},
+  {
+    "key": "ctrl+alt+space c w",
+    "command": "workbench.action.closeWindow",
+    "when": "isWindows"
+},
+  {
+    "key": "ctrl+alt+space t s",
+    "command": "workbench.action.toggleSidebarVisibility",
+    "when": "isWindows"
+},
+{
+  "key": "ctrl+alt+space t t",
+  "command": "workbench.action.terminal.toggleTerminal",
+  "when": "isWindows"
+},
+{
+  "key": "ctrl+alt+space t d",
+  "command": "workbench.panel.repl.view.focus",
+  "when": "isWindows"
+},
+{
+  "key": "ctrl+alt+space t o",
+  "command": "workbench.action.output.toggleOutput",
+  "when": "isWindows"
+},
+{
+  "key": "ctrl+alt+space t p",
+  "command": "workbench.actions.view.problems",
+  "when": "isWindows"
+},
+{
+  "key": "ctrl+alt+space . r",
+  "command": "workbench.action.debug.run",
+  "when": "isWindows"
+},
+{
+  "key": "ctrl+alt+space . d",
+  "command": "workbench.action.debug.start",
+  "when": "isWindows"
+},
+{
+  "key": "ctrl+alt+space . b",
+  "command": "workbench.action.tasks.build",
+  "when": "isWindows"
+},
+{
+  "key": "ctrl+alt+space d f",
+  "command": "editor.action.formatDocument",
+  "when": "isWindows"
+},
+  {
+    "key": "ctrl+alt+apace a s",
+    "command": "al.downloadSymbols",
+    "when": "isWindows"
+},
+  {
+    "key": "ctrl+alt+space a e",
+    "command": "al.explorer",
+    "when": "isWindows"
+}
+]   
+   
