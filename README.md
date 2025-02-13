@@ -14,7 +14,7 @@
 | ctrl+alt+space t d | toggle debug |
 | ctrl+alt+space t o | toggle output |
 | ctrl+alt+space t p | toggle problems |
-| ctrl+alt+space q | close active editor |
+| ctrl+alt+space q | close active editor / terminal |
 | ctrl+alt+space c f | close folder |
 | ctrl+alt+space c w | close window |
 | ctrl+alt+space . r | run |
