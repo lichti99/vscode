@@ -1,5 +1,77 @@
 // Place your key bindings in this file to override the defaults
-[
+[ 
+  // De-/Activate Vim-Extension 
+  {
+    "key": "ctrl+cmd+space v",
+    "command": "toggleVim",
+    "when": "isMac"
+  },
+  {
+    "key": "ctrl+alt+space v",
+    "command": "toggleVim",
+    "when": "isWindows"
+  },
+  // run, debug, build
+  {
+    "key": "ctrl+alt+space r",
+    "command": "workbench.action.debug.run",
+    "when": "isWindows"
+  },
+  {
+    "key": "ctrl+cmd+space r",
+    "command": "workbench.action.debug.run",
+    "when": "isMac"
+  },
+  {
+    "key": "ctrl+alt+space d",
+    "command": "workbench.action.debug.start",
+    "when": "isWindows"
+  },
+  {
+    "key": "ctrl+cmd+space d",
+    "command": "workbench.action.debug.start",
+    "when": "isMac"
+  },
+  {
+    "key": "ctrl+alt+space b",
+    "command": "al.fullPackage",
+    "when": "isWindows"
+  },
+  {
+    "key": "ctrl+cmd+space b",
+    "command": "workbench.action.tasks.build",
+    "when": "isMac"
+  },
+  {
+    "key": "ctrl+alt+space l",
+    "command": "workbench.action.debug.restart",
+    "when": "isWindows && inDebugMode"
+  },
+  {
+    "key": "ctrl+cmd+space l",
+    "command": "workbench.action.debug.restart",
+    "when": "isMac && inDebugMode"
+  },
+  {
+    "key": "ctrl+alt+space x",
+    "command": "workbench.action.debug.stop",
+    "when": "isWindows && inDebugMode && !focusedSessionIsAttach"
+  },
+  {
+    "key": "ctrl+cmd+space x",
+    "command": "workbench.action.debug.stop",
+    "when": "isMac && inDebugMode && !focusedSessionIsAttach"
+  },
+  {
+    "key": "ctrl+alt+space x",
+    "command": "workbench.action.debug.stop",
+    "when": "isWindows && inDebugMode && focusedSessionIsAttach"
+  },
+  {
+    "key": "ctrl+cmd+space x",
+    "command": "workbench.action.debug.stop",
+    "when": "isMac && inDebugMode && focusedSessionIsAttach"
+  },
   {
     "key": "ctrl+alt+space - -",
     "command": "projectManager.listProjects",
@@ -21,64 +93,14 @@
     "when": "isMac"
   },
   {
-    "key": "ctrl+alt+space o p",
+    "key": "ctrl+alt+space - p",
     "command": "workbench.profiles.actions.switchProfile",
     "when": "isWindows"
   },
   {
-    "key": "ctrl+cmd+space o p",
+    "key": "ctrl+cmd+space - p",
     "command": "workbench.profiles.actions.switchProfile",
     "when": "isMac"
-  },
-  {
-    "key": "ctrl+alt+space e",
-    "command": "workbench.view.explorer",
-    "when": "isWindows"
-  },
-  {
-    "key": "ctrl+cmd+space e",
-    "command": "workbench.view.explorer",
-    "when": "isMac"
-  },
-  {
-    "key": "ctrl+alt+space p",
-    "command": "workbench.action.showCommands",
-    "when": "usWindows"
-  },
-  {
-    "key": "ctrl+cmd+space p",
-    "command": "workbench.action.showCommands",
-    "when": "usMac"
-  },
-  {
-    "key": "ctrl+alt+space f",
-    "command": "workbench.action.quickOpen",
-    "when": "isWindows"
-  },
-  {
-    "key": "ctrl+cmd+space f",
-    "command": "workbench.action.quickOpen",
-    "when": "isMac"
-  },
-  {
-    "key": "ctrl+alt+space q",
-    "command": "workbench.action.closeActiveEditor",
-    "when": "isWindows && editorTextFocus"
-  },
-  {
-    "key": "ctrl+cmd+space q",
-    "command": "workbench.action.closeActiveEditor",
-    "when": "isMac && editorTextFocus"
-  },
-  {
-    "key": "ctrl+alt+space q",
-    "command": "workbench.action.terminal.kill",
-    "when": "isWindows && terminalFocus"
-  },
-  {
-    "key": "ctrl+cmd+space q",
-    "command": "workbench.action.terminal.kill",
-    "when": "isWMac && terminalFocus"
   },
   {
     "key": "ctrl+alt+space c f",
@@ -91,113 +113,18 @@
     "when": "isMac"
   },
   {
-    "key": "ctrl+alt+space c w",
-    "command": "workbench.action.closeWindow",
-    "when": "isWindows"
-  },
-  {
-    "key": "ctrl+cmd+space c w",
-    "command": "workbench.action.closeWindow",
-    "when": "isMac"
-  },
-  {
-    "key": "ctrl+alt+space t s",
-    "command": "workbench.action.toggleSidebarVisibility",
-    "when": "isWindows"
-  },
-  {
-    "key": "ctrl+cmd+space t s",
-    "command": "workbench.action.toggleSidebarVisibility",
-    "when": "isMac"
-  },
-  {
-    "key": "ctrl+alt+space t t",
-    "command": "workbench.action.terminal.toggleTerminal",
-    "when": "isWindows"
-  },
-  {
-    "key": "ctrl+cmd+space t t",
-    "command": "workbench.action.terminal.toggleTerminal",
-    "when": "isMac"
-  },
-  {
-    "key": "ctrl+alt+space t d",
-    "command": "workbench.panel.repl.view.focus",
-    "when": "isWindows"
-  },
-  {
-    "key": "ctrl+cmd+space t d",
-    "command": "workbench.panel.repl.view.focus",
-    "when": "isMac"
-  },
-  {
-    "key": "ctrl+alt+space t o",
-    "command": "workbench.action.output.toggleOutput",
-    "when": "isWindows"
-  },
-  {
-    "key": "ctrl+cmd+space t o",
-    "command": "workbench.action.output.toggleOutput",
-    "when": "isMac"
-  },
-  {
-    "key": "ctrl+alt+space t p",
-    "command": "workbench.actions.view.problems",
-    "when": "isWindows"
-  },
-  {
-    "key": "ctrl+cmd+space t p",
-    "command": "workbench.actions.view.problems",
-    "when": "isMac"
-  },
-  {
-    "key": "ctrl+alt+space . r",
-    "command": "workbench.action.debug.run",
-    "when": "isWindows"
-  },
-  {
-    "key": "ctrl+cmd+space . r",
-    "command": "workbench.action.debug.run",
-    "when": "isMac"
-  },
-  {
-    "key": "ctrl+alt+space . d",
-    "command": "workbench.action.debug.start",
-    "when": "isWindows"
-  },
-  {
-    "key": "ctrl+cmd+space . d",
-    "command": "workbench.action.debug.start",
-    "when": "isMac"
-  },
-  {
-    "key": "ctrl+alt+space . b",
-    "command": "workbench.action.tasks.build",
-    "when": "isWindows"
-  },
-  {
-    "key": "ctrl+cmd+space . b",
-    "command": "workbench.action.tasks.build",
-    "when": "isMac"
-  },
-  {
-    "key": "ctrl+alt+space d f",
-    "command": "editor.action.formatDocument",
-    "when": "isWindows"
-  },
-  {
-    "key": "ctrl+cmd+space d f",
-    "command": "editor.action.formatDocument",
-    "when": "isMac"
-  },
-  {
-    "key": "ctrl+alt+apace a s",
+    "key": "ctrl+alt+space a s",
     "command": "al.downloadSymbols",
     "when": "isWindows"
   },
   {
     "key": "ctrl+alt+space a e",
     "command": "al.explorer",
+    "when": "isWindows"
+  },
+  {
+    "key": "ctrl+alt+space a o",
+    "command": "al.openExternally",
     "when": "isWindows"
   }
 ]
